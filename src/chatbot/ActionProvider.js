@@ -38,7 +38,7 @@ async function handleRecommendation(input, botMsg, setState, state){
     limpiarArray(state.bookNames);
     limpiarArray(state.history)
     try {
-        await fetch('https://jucaso.azurewebsites.net/getRec',{
+        await fetch('https://pepechat.azurewebsites.net/getRec',{
             'method' : 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -111,7 +111,7 @@ async function handleRecommendation(input, botMsg, setState, state){
 async function handleRecommendationV2(input, botMsg, setState, state){
     limpiarArray(state.bookNames);
     try {
-        await fetch('https://jucaso.azurewebsites.net/getRecV2',{
+        await fetch('https://pepechat.azurewebsites.net/getRecV2',{
             'method' : 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -157,7 +157,7 @@ async function handleRecommendationV3(input, botMsg, setState, state){
     limpiarArray(state.bookNames);
     limpiarArray(state.history)
     try {
-        await fetch('https://jucaso.azurewebsites.net/getRecV3',{
+        await fetch('https://pepechat.azurewebsites.net/getRecV3',{
             'method' : 'POST',
             headers: {
                 'Content-Type': 'application/json'
