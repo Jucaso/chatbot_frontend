@@ -12,6 +12,10 @@ class MessageParser {
     if (quitarAcentos(message).toLowerCase().includes('recomiendame')) {
       this.actionProvider.handleRecChat(quitarAcentos(message).toLowerCase());
     }
+    else if (quitarAcentos(message).toLowerCase().includes('reiniciar')) {
+      this.actionProvider.handleReiniciar(quitarAcentos(message).toLowerCase());
+    } 
+    
   };
 
   // return (

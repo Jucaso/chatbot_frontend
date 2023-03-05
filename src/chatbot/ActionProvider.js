@@ -217,6 +217,21 @@ class ActionProvider {
         
     }
     
+    handleReiniciar = () => {
+        const botMessage = this.createChatBotMessage('Hemos regresado al inicio :), te muestro algunas sugerencias de tópicos o géneros de lectura:',
+        {widget: "options1"});
+
+        //this.state.history.push('ficcion')
+
+        this.setState((prev) => ({
+            ...prev,
+            messages: [botMessage],          
+        }));
+        // const btn = document.querySelectorAll('.option-button');
+        // btn.forEach(elemento => elemento.remove());
+        // console.log(this.state);
+    };
+    
     handleRecomendacionLibro1 = () => {    
         const botMessage = this.createChatBotMessage('Estoy pensando en los mejores libros para tí, dame un momento...')
         this.setState((prev) => ({
