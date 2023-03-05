@@ -194,7 +194,11 @@ async function handleRecommendationV3(input, botMsg, setState, state){
             }));
         })
     } catch (error) {
-        console.log(error);          
+        const botMessage = botMsg("Lo siento, no entendí tú petición. Intenta escribir de otra manera tu solicitud.")
+        setState((prev) => ({
+            ...prev,
+            messages: [...prev.messages, botMessage],
+        }));            
     }
     //modificaAux();
 }
