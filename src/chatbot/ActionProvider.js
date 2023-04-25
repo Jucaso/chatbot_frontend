@@ -58,15 +58,15 @@ async function handleRecommendation(input, botMsg, setState, state){
             //console.log("link:", link[link.length - 1])
 
             const botMessage = botMsg("Aquí tienes tus recomendaciones personalizadas:") 
-            const botMessage1 = botMsg(rec[0]['rec1'], 
+            const botMessage1 = botMsg("1. " + rec[0]['rec1'], 
             {widget : "recomendacionLibro1"});
-            const botMessage2 = botMsg(rec[1]['rec2'], 
+            const botMessage2 = botMsg("2. " + rec[1]['rec2'], 
             {widget : "recomendacionLibro2"});
-            const botMessage3 = botMsg(rec[2]['rec3'], 
+            const botMessage3 = botMsg("3. " + rec[2]['rec3'], 
             {widget : "recomendacionLibro3"});
-            const botMessage4 = botMsg(rec[3]['rec4'], 
+            const botMessage4 = botMsg("4. " + rec[3]['rec4'], 
             {widget : "recomendacionLibro4"});
-            const botMessage5 = botMsg(rec[4]['rec5'], 
+            const botMessage5 = botMsg("5. " + rec[4]['rec5'], 
             {widget : "recomendacionLibro5"});
             
             // const botMessage = botMsg("Aquí tienes tus recomendaciones personalizadas:") 
@@ -130,15 +130,15 @@ async function handleRecommendationV2(input, botMsg, setState, state){
             //console.log("link:", link[link.length - 1])
 
             const botMessage = botMsg("Aquí tienes tus recomendaciones personalizadas:") 
-            const botMessage1 = botMsg(rec[0]['rec1'], 
+            const botMessage1 = botMsg("1. " + rec[0]['rec1'], 
             {widget : "recomendacionLibro1"});
-            const botMessage2 = botMsg(rec[1]['rec2'], 
+            const botMessage2 = botMsg("2. " + rec[1]['rec2'], 
             {widget : "recomendacionLibro2"});
-            const botMessage3 = botMsg(rec[2]['rec3'], 
+            const botMessage3 = botMsg("3. " + rec[2]['rec3'], 
             {widget : "recomendacionLibro3"});
-            const botMessage4 = botMsg(rec[3]['rec4'], 
+            const botMessage4 = botMsg("4. " + rec[3]['rec4'], 
             {widget : "recomendacionLibro4"});
-            const botMessage5 = botMsg(rec[4]['rec5'], 
+            const botMessage5 = botMsg("5. " + rec[4]['rec5'], 
             {widget : "recomendacionLibro5"});
 
             setState((prev) => ({
@@ -177,15 +177,15 @@ async function handleRecommendationV3(input, botMsg, setState, state){
             //console.log("link:", link[link.length - 1])
 
             const botMessage = botMsg("Aquí tienes tus recomendaciones personalizadas:") 
-            const botMessage1 = botMsg(rec[0]['rec1'], 
+            const botMessage1 = botMsg("1. " + rec[0]['rec1'], 
             {widget : "recomendacionLibro1"});
-            const botMessage2 = botMsg(rec[1]['rec2'], 
+            const botMessage2 = botMsg("2. " + rec[1]['rec2'], 
             {widget : "recomendacionLibro2"});
-            const botMessage3 = botMsg(rec[2]['rec3'], 
+            const botMessage3 = botMsg("3. " + rec[2]['rec3'], 
             {widget : "recomendacionLibro3"});
-            const botMessage4 = botMsg(rec[3]['rec4'], 
+            const botMessage4 = botMsg("4. " + rec[3]['rec4'], 
             {widget : "recomendacionLibro4"});
-            const botMessage5 = botMsg(rec[4]['rec5'], 
+            const botMessage5 = botMsg("5. " + rec[4]['rec5'], 
             {widget : "recomendacionLibro5"});
 
             setState((prev) => ({
@@ -231,7 +231,7 @@ class ActionProvider {
         // btn.forEach(elemento => elemento.remove());
         // console.log(this.state);
     };
-    
+        
     handleRecomendacionLibro1 = () => {    
         const botMessage = this.createChatBotMessage('Estoy pensando en los mejores libros para tí, dame un momento...')
         this.setState((prev) => ({
