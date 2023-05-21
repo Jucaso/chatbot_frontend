@@ -18,4 +18,4 @@ You can ask to Pepe for recommendations based on others recommendations already 
 
 ![img_2](https://github.com/Jucaso/chatbot_frontend/assets/66447945/3cabe654-cbd7-4c55-9345-04662b198b76)
 
-It is important to note that the application is in Spanish language. 
+It is important to note that the application is in Spanish language. Additionally, if you want to check the backend side, here is it: https://github.com/Jucaso/chatbot_backend
