@@ -18,3 +18,4 @@ You can ask to Pepe for recommendations based on others recommendations already 
 
 ![img_2](https://github.com/Jucaso/chatbot_frontend/assets/66447945/3cabe654-cbd7-4c55-9345-04662b198b76)
 
+It is important to note that the application is in Spanish language. 
